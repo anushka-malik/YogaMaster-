@@ -25,7 +25,11 @@ app.use(express.json());
 
 app.use(cors(),
 )
-
+app.use(cors({
+  origin: 'https://yoga-master-gamma.vercel.app', // Replace with your frontend deployed URL
+  methods: ['GET', 'POST'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+}));
 // Serve files from TutorImages directory
 app.use('/TutorImages', express.static(path.join(__dirname, 'TutorImages')));
 
