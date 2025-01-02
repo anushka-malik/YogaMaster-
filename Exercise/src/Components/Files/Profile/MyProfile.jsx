@@ -12,7 +12,7 @@ const MyProfile = () => {
     dob: '',
     name: '',
   });
-  // const backendUrl= import.meta.env.VITE_BACKEND_URL
+  const backendUrl= import.meta.env.VITE_BACKEND_URL
   //  static
   useEffect(() => {
     if (userData) {
@@ -41,7 +41,7 @@ const MyProfile = () => {
       console.log('Sending update request with data:', editedProfile);
       
       // Update to use the correct URL
-      const response = await fetch('http://localhost:4000/user/update-profile', {
+      const response = await fetch(`${backendUrl}/user/update-profile`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
