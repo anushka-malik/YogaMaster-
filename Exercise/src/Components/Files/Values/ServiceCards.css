@@ -1,4 +1,4 @@
-.valuehead{
+/* .valuehead{
     height:50px;
     width: 100%;
     color: white;
@@ -8,7 +8,7 @@
 }
 .service-container {
     height:400px;
-    /* border: 2px solid black; */
+  
     display: flex;
     justify-content: center;
     align-items: stretch;
@@ -97,7 +97,6 @@
     margin: 0;
 }
 
-/* Large Screens */
 @media (min-width: 1200px) {
     .service-container {
         padding: 60px 40px;
@@ -108,7 +107,7 @@
     }
 }
 
-/* Tablets */
+
 @media (max-width: 1024px) and (min-width: 768px) {
     .service-container {
         padding: 40px 20px;
@@ -118,8 +117,6 @@
         min-width: 280px;
     }
 }
-
-/* Mobile Landscape */
 @media (max-width: 767px) and (orientation: landscape) {
     .service-container {
         padding: 20px;
@@ -131,7 +128,6 @@
     }
 }
 
-/* Mobile Portrait */
 @media (max-width: 480px) {
     .service-container {
         padding: 16px;
@@ -144,7 +140,6 @@
     }
 }
 
-/* Small Mobile Devices */
 @media (max-width: 320px) {
     .card-title {
         font-size: 18px;
@@ -165,7 +160,6 @@
     }
 }
 
-/* Support for Dark Mode */
 @media (prefers-color-scheme: dark) {
     .service-card {
         background: #1a1a1a;
@@ -181,7 +175,6 @@
     }
 }
 
-/* Reduced Motion Preference */
 @media (prefers-reduced-motion: reduce) {
     .service-card {
         transition: none;
@@ -189,5 +182,107 @@
     
     .service-card:hover {
         transform: none;
+    }
+} */
+
+
+
+.valuehead {
+    text-align: center;
+    padding: 20px 0;
+    margin: 0;
+    color: #333;
+}
+
+.valuehead h1 {
+    font-size: clamp(24px, 4vw, 30px);
+    margin: 0;
+}
+
+.service-container {
+    min-height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: clamp(16px, 3vw, 30px);
+    padding: clamp(20px, 5vw, 40px);
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.service-card {
+    background: white;
+    padding: clamp(20px, 4vw, 30px);
+    border-radius: clamp(8px, 1.5vw, 10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+    min-width: min(100%, 300px);
+    max-width: 400px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(12px, 2vw, 20px);
+}
+
+/* Rest of the styles remain same until media queries */
+
+/* Large Screens */
+@media (min-width: 1200px) {
+    .service-container {
+        padding: 40px;
+        flex-direction: row;
+    }
+    
+    .service-card {
+        min-width: 320px;
+    }
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .service-container {
+        padding: 30px 20px;
+        flex-direction: row;
+    }
+    
+    .service-card {
+        min-width: 280px;
+    }
+}
+
+/* Mobile Landscape */
+@media (max-width: 767px) {
+    .service-container {
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .service-card {
+        width: 100%;
+        max-width: 500px;
+        margin-bottom: 20px;
+    }
+
+    .valuehead {
+        padding: 10px 0;
+    }
+}
+
+/* Mobile Portrait */
+@media (max-width: 480px) {
+    .service-container {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .service-card {
+        padding: 20px 15px;
     }
 }
