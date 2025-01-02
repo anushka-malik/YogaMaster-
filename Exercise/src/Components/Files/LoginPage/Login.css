@@ -231,6 +231,16 @@ p {
     margin: 0;
     font-size: 14px;
 }
+input.error {
+    border-color: #ff4d4f;
+}
+
+.error-message {
+    color: #ff4d4f;
+    font-size: 12px;
+    margin-top: 4px;
+    display: block;
+}
 
 .log, .create {
     color: #4a90e2;
