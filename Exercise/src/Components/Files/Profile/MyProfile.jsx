@@ -12,7 +12,7 @@ const MyProfile = () => {
     dob: '',
     name: '',
   });
-  const backendUrl= import.meta.env.VITE_BACKEND_URL
+  const backendUrl= import.meta.env.VITE_APP_BACKEND_URL
   //  static
   useEffect(() => {
     if (userData) {
