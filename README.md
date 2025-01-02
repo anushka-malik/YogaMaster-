@@ -1,6 +1,6 @@
 # Fitnesso
 
-This project is a web-based platform built using React that allows users to book appointments with yoga tutors and manage their schedules seamlessly. It supports user registration for both students and tutors, appointment booking, payments, and cancellations, all connected to a robust backend for data management.
+This project is a web-based platform built using React that allows users to book appointments with yoga tutors and manage their schedules seamlessly. It supports user registration for both students and tutors, appointment booking, payments, and change avialbility, all connected to a robust backend for data management.
 
 ## Features
 
@@ -11,19 +11,13 @@ This project is a web-based platform built using React that allows users to book
    - Register/login.
    - Browse and book yoga tutor appointments.
    - Make payments for bookings.
-   - Cancel appointments if needed.
-
-2. **Tutors**:
-
-   - Register/login.
-   - Set availability and manage schedules.
-   - View upcoming appointments.
+   - Change availability if needed.
 
 ### Functionality
 
 - Secure login and signup system.
-- Dynamic user role handling (Student/Tutor).
-- Appointment booking and cancellation.
+- Dynamic user role handling (Student).
+- Appointment booking and payment.
 - Payment gateway integration for seamless transactions.
 - Backend support for data storage and retrieval.
 
@@ -116,7 +110,7 @@ This project is a web-based platform built using React that allows users to book
 ## Usage
 
 - Navigate to `http://localhost:5173` to access the application.
-- Register as a student or tutor to explore the platform.
+- Register as a student to explore the platform.
 - Use the dashboard to book appointments or manage your schedule.
 
 ## Contributing
@@ -137,5 +131,8 @@ Contributions are welcome! Please follow these steps:
    git push origin feature-name
    ```
 5. Create a pull request.
+
+
+
 
 
