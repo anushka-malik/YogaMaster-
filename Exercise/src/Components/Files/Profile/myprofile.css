@@ -39,7 +39,21 @@
 .profile-section {
     margin-bottom: 1.5rem;
 }
+.error {
+    border-color: #ff4d4f !important;
+    background-color: #fff2f0;
+}
 
+.error-message {
+    color: #ff4d4f;
+    font-size: 12px;
+    margin-top: 4px;
+    display: block;
+}
+
+.profile-field div {
+    width: 100%;
+}
 .profile-section h3 {
     color: #666;
     font-size: 1rem;
