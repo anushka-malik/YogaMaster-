@@ -39,7 +39,7 @@ const About = () => {
             </div>
         </div>
         <div>
-         <DoctorLandingPage/>
+        {/* <DoctorLandingPage/> */}
         </div>
     </div>
   )
